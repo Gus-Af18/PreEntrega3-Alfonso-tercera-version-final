@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--link fuente-->
+      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+      <!--link bt-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--link css-->
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <title>prod-select</title>
+</head>
+<body>
+    <header>
+        <!--menu bt-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+            <img src="../IMG/Logo-menupx.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../PAGES/catalogo.html">Catalogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../PAGES/somos.html">Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../PAGES/contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <!-- segunda parte del menu-->
+            <div class="nav-items">
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <img class="logo" src="../IMG/lupa.png" alt="icono de ayuda">
+                </li>
+                <li class="nav-item">
+                  <img class="logo" src="../IMG/shopping-basket.png" alt="icono de compra">
+                </li>
+                <li class="nav-item">
+                  <img class="logo" src="../IMG/usuario.png" alt="icono de registro">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+<!-- tercera parte main -->
+
+    <main class="main-prod">
+        <div class="container-select">
+            <h1>Producto Seleccionado:</h1>
+            <div class="seleccion">
+                <img src="../IMG/torta-cuatro.png" alt="torta-cuatro">
+                <p>Desde el famoso Sacher Hotel de Viena, Lutz ha recreado esta famosa receta con capas de chocolate oscuro y húmedo con conservas de albaricoque repartidas entre ellas y cubiertas de más chocolate. Chocaholics dan a este postre 5 estrellas!</p>
+                <div class="prod-botones">
+                  <input class="botones" type="button" value="Al Canasto">
+              </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-prod">
+        <div class="container">
+            <div class="selc-footer">
+                <a href="../PAGES/catalogo.html">
+                    <input class="botones" type="button" value="Regresar al catalogo">
+                </a>
+                <p>&copy; todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
