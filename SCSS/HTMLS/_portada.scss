@@ -33,8 +33,7 @@ header{
     .nav-items .logo{
         margin: 3px;
         height: 25px;
-        border-radius: 5px;
-        
+        border-radius: 5px; 
     }
     
 }
@@ -46,9 +45,8 @@ main{
 
     div{
         .container-logo{
-            background-color: white;
+            background-color: hsl(0, 0%, 100%);
         }
-
         img{
             width: 45%; 
         }
@@ -57,20 +55,19 @@ main{
 
          .title{
             box-sizing: bold;
-
         }
-        
         .proceso{
             display: grid;
             grid-template-columns: 200px 200px;
             grid-template-rows: 150px 150px;
+            grid-row: auto;
             justify-content: center;
-            grid-auto-rows: auto;
-            row-gap: 100px;
+            row-gap: 70px;
             text-align: justify;
-                        
+            margin-bottom: 10px;
+                                  
             img{
-                width: 80%;
+                width: 90%;
             }
         }
 
@@ -78,17 +75,83 @@ main{
     
 }
 
-footer{
-    margin: 5px;
-    text-align: center;
-    
+/* estilos del footer*/
+.footer-distributed {
+    display: grid;
+    grid-template-columns: 350px;
+    grid-template-rows: 40px;
+    justify-content: center;
+        background-color: rgb(86,7,12);
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+        font: normal 16px sans-serif;
+            padding: 45px 50px;
+        .footer-left p {
+            color: #8f9296;
+            font-size: 14px;
+            margin: 0;
+        }
+        /* Footer links */
+        p.footer-links {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            margin: 0 0 10px;
+            padding: 0;
+            transition: ease .25s;
+            a {
+                display: inline-block;
+                line-height: 1.8;
+                text-decoration: none;
+                color: inherit;
+                transition: ease .25s;
+                
+            }
+            a:before {
+                font-size: 20px;
+                left: 0;
+                color: #fff;
+                display: inline-block;
+                padding-right: 5px;
+            }
+            .link-1:before {
+                content: none;
+              }
+        }
+        .footer-right {
+            float: right;
+            margin-top: 6px;
+            margin-left: 25%;
+            max-width: 180px;
+            img {
+                display: inline-block;
+                width: 35px;
+                height: 35px;
+                background-color: wheat;
+                border-radius: 2px;
+                font-size: 20px;
+                text-align: center;
+                line-height: 35px;
+                margin-left: 3px;
+                transition:all .25s;
+            }
+            img:hover {
+                -webkit-transform:scale(1.1); 
+                transform:scale(1.1);
+                background-color: aqua;
+            }
+        }
+        p.footer-links a:hover{text-decoration:underline;}
+      
 }
-
+    
 /*pantallas de table*/
 
 /*pantalla de computador*/
 @media (min-width: 768px){
-
+/*estilos del main*/
     main{
         text-align: center;
         div{     
@@ -103,10 +166,10 @@ footer{
             .proceso{
                 display: grid;
                 grid-template-columns: 200px 250px 200px 200px;
-                grid-template-rows: 100px 250px;
+                grid-template-rows: 120px 250px;
                 justify-content: center;
                 grid-auto-rows: auto;
-                column-gap: 5px;
+                column-gap: 10px;
 
                 img{
                     width: 100%;
@@ -120,6 +183,25 @@ footer{
         }
 
     }
-
-
+    /*estilos del footer*/
+    .footer-distributed{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        .footer-left{
+            text-align: left;
+        }
+        .footer-right {
+            float: right;
+            margin-top: 6px;
+            max-width: 180px;
+        }
+        .footer-left{
+            p.footer-links {
+                line-height: 1.8;
+                                
+            }
+        }
+    }
 }

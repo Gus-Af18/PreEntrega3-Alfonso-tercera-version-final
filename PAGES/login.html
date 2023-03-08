@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <!--link bt-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--link css-->
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <title>login</title>
+</head>
+<body>
+    <!-- menu principal de la pagina-->
+    <header>
+        <!--menu bt-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+            <img src="../IMG/Logo-menupx.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../PAGES/catalogo.html">Catalogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../PAGES/somos.html">Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../PAGES/contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <!-- segunda parte del menu-->
+            <div class="nav-items">
+              <ul class="nav justify-content-end">
+                
+                <li class="nav-item">
+                  <a href="../PAGES/shopping.html"><img class="logo" src="../IMG/shopping-basket.png" alt="icono de compra"></a>
+                </li>
+                <li class="nav-item">
+                  <a href="../PAGES/login.html"><img class="logo" src="../IMG/usuario.png" alt="icono de registro"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--formulario main-->
+    <main class="main-login">
+        <div class="box">  	
+            <input type="checkbox" id="chk" aria-hidden="true">
+    
+                <div class="signup">
+                    <form>
+                        <label for="chk" aria-hidden="true">Sign up</label>
+                        <input type="text" name="txt" placeholder="User name" required="">
+                        <input type="email" name="email" placeholder="Email" required="">
+                        <input type="password" name="pswd" placeholder="Password" required="">
+                        <button>Sign up</button>
+                    </form>
+                </div>
+    
+                <div class="login">
+                    <form>
+                        <label for="chk" aria-hidden="true">Login</label>
+                        <input type="email" name="email" placeholder="Email" required="">
+                        <input type="password" name="pswd" placeholder="Password" required="">
+                        <button>Login</button>
+                    </form>
+                </div>
+        </div>
+
+    </main>
+
+    <!-- pide de pagina footer-->
+    <footer class="footer-distributed">
+        <div class="footer-right">
+
+          <a href="https://www.instagram.com/tortasartesanalesibague/"><img class="fa fa-instagram" src="../IMG/instagram-2.png" alt="icono instagram-2"></a>
+      
+          <a href="https://www.facebook.com/LaIbaguerenita/"><img src="../IMG/facebook-1.png" alt="icono facebook-1"></a>
+      
+          <a href="./PAGES/contacto.html"><img class="fa fa-mail" src="../IMG/mail-4.png" alt="icono mail-03"></a>
+      
+          <a href="https://goo.gl/maps/Gho9ZVMVAePr3k7y9"><img class="fa fa-maps" src="../IMG/map-5.png" alt="icon map-5">
+          </a>
+        </div>
+      
+        <div class="footer-left">
+          <p class="footer-links">
+            <a class="link-1" href="../index.html">Home</a>
+            <a href="../PAGES/catalogo.html">Catolg</a>
+            <a href="../PAGES/contacto.html">Write us</a>
+            <a href="../PAGES/somos.html">About</a>
+          </p>
+      
+          <p>Telefonos: (8)2653724 - 3178953169 <br>
+            Ibagué - Tolima - Colombia <br>
+            Tortas Artesanales Ibagué &copy; 2023
+          </p>
+        </div>
+      </footer>
+
+    <!-- script bt-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
