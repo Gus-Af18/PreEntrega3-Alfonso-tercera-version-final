@@ -1,13 +1,11 @@
+@import "../VARS/variables";
 /*estilos contacto*/
 
 /*estilos main*/
 .main-contacto{
     div{
         .torta-contacto{
-            width: 300px;
-            margin: 10px;
-            border-radius: 30px;
-            box-shadow: 3px 3px;
+            @include torta-m;
         }   
     }
     /*estilos del formulario*/
@@ -16,32 +14,7 @@
             .container1{
                 
                 .formulario{
-                    .nombre{
-                        grid-template-areas: nombre;
-                    }
-                    .correo{
-                        grid-template-areas: correo;
-                    }
-                    .numero{
-                        grid-template-areas: numero;
-                    }
-                    .asunto{
-                       grid-template-areas: asunto;
-                    }
-                    background-color: rgb(209, 141, 164);
-                    height: 450px;
-                    display: grid;
-                    grid-gap: 0.5em;
-                    grid-template-columns: 50%;
-                    grid-template-rows: 15%;
-                    grid-template-areas: 
-                    "nombre"
-                    "numero"
-                    "asunto"
-                    "correo";
-                    justify-content: center;
-                    text-align: start;
-                    border: 3px solid black;
+                    @include formulario-m;
                 }
                 padding: 15px 10px;
             }
@@ -49,30 +22,11 @@
     }
 
     .redes{
-        display: grid;
-        grid-template-columns: 70px 70px 70px;
-        grid-template-rows: 30px;
-        width: 100%;
-        justify-content: center;
-
-        img{
-            width: 50%;
-            border-radius: 15px;
-        }
+        @include redes-m;
     }
 
     .informacion{
-        margin-top: 20px;
-        display: grid;
-        grid-template-columns: 30px 30px;
-        grid-template-rows: 25px;
-        width: 100%;
-        justify-content: center;
-
-        img{
-            width: 20px;
-            height: 20px;
-        }
+        @include informacion-m;
     }
 }
 
@@ -91,16 +45,7 @@
         form{
             fieldset{
                 .container1{
-                    justify-content: center;
-                    padding-left: 25%;
-                    margin-left: 120px;
-
-                    .formulario{
-                        background-color: rgb(209, 141, 164);
-                        height: 450px;
-                        width: 450px;
-                        
-                    }
+                    @include container-c;
                 }
             }
         }

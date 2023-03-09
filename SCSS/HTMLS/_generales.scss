@@ -2,14 +2,7 @@
 
 /*estilos generales*/
 body{
-    /*rest*/
-    box-sizing: border-box;
-
-    margin: 0;
-    padding: 0;
-    background-color: $color-principal;
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
+    @extend %general;
 
     h1{font-size: 30px;}
     h2{font-size: 20px;}
@@ -18,14 +11,7 @@ body{
     li{font-size: 15px;}
 
     .botones{
-        font-size: 15px;
-        font-weight: bold;
-        padding: 8px 12px;
-        border-radius: 7px;
-        border: 1px solid rgb(15, 15, 15);
-        box-shadow: 2px 2px 10px rgb(15, 15, 15) ;
-        color: black;
-        background-color: $color-botonesmenu;
+        @extend %bottons;
     }
     
     .botones:hover{

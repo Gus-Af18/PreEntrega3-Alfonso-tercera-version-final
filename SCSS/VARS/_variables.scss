@@ -1,10 +1,159 @@
-//estilos generales//
-$color-principal: rgb(197, 140, 140);
-$color-botonesmenu: rgb(211, 253, 253);
-$color-hover: rgb(213, 226, 236);
-$color-header: rgb(233, 156, 156);
-$color-seleccion: rgb(135, 135, 238);
+//estilos generales paleta de colores//
+$color-principal: rgb(223, 122, 146);
+$color-header: rgb(236, 214, 192);
 $color-footer: rgb(180, 1, 41);
+$color-botones: rgb(241, 226, 187);
+$color-hover: rgb(219, 179, 94);
 
-$color-header2: rgb(231, 217, 199);
-$color-principal2: rgb(250, 230, 201);
+
+//extend// 
+//estilos generales//
+%bottons{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 7px;
+    border: 1px solid rgb(15, 15, 15);
+    box-shadow: 2px 2px 10px rgb(15, 15, 15) ;
+    color: black;
+    background-color: $color-botones;
+}
+%general{
+    /*rest*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: $color-principal;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+//mixin//
+//estilos catalogo mobil//
+@mixin catalogo-m{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 450px;
+    justify-content: center;
+    grid-template-rows: auto;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+@mixin a-m{
+    background-color: $color-botones;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 7px;
+    border: 1px solid rgb(15, 15, 15);
+    box-shadow: 2px 2px 10px rgb(15, 15, 15) ;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    margin: 3px;
+    width: 70%;
+}
+//estilos computador//
+@mixin pngs-c{
+    .png1{
+        background-color: plum;
+        grid-template-areas: png1;
+    }
+    .png2{
+        background-color: rgb(202, 250, 250);
+        grid-template-areas: png2;
+        
+    }
+    .png3{
+        background-color: tomato;
+        grid-template-areas: png3;
+
+    }
+    .png4{
+        background-color: brown;
+        grid-template-areas: png4;
+
+    }
+}
+@mixin catalogo-c{
+    height: 100%;
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 100%;
+    grid-area: 
+    "png1 png2 png3 png4";
+    grid-template-rows: auto;
+}
+//estilos contacto mobil//
+@mixin torta-m{
+    width: 300px;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: 3px 3px;
+}
+@mixin formulario-m{
+    .nombre{
+        grid-template-areas: nombre;
+    }
+    .correo{
+        grid-template-areas: correo;
+    }
+    .numero{
+        grid-template-areas: numero;
+    }
+    .asunto{
+       grid-template-areas: asunto;
+    }
+    background-color: rgb(209, 141, 164);
+    height: 450px;
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: 50%;
+    grid-template-rows: 15%;
+    grid-template-areas: 
+    "nombre"
+    "numero"
+    "asunto"
+    "correo";
+    justify-content: center;
+    text-align: start;
+    border: 3px solid black;
+}
+@mixin redes-m{
+    display: grid;
+    grid-template-columns: 70px 70px 70px;
+    grid-template-rows: 30px;
+    width: 100%;
+    justify-content: center;
+
+    img{
+        width: 50%;
+        border-radius: 15px;
+    }
+}
+@mixin informacion-m{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 30px 30px;
+    grid-template-rows: 25px;
+    width: 100%;
+    justify-content: center;
+
+    img{
+        width: 20px;
+        height: 20px;
+    }
+}
+//estilos computadora//
+@mixin container-c{
+    justify-content: center;
+    padding-left: 25%;
+    margin-left: 120px;
+
+    .formulario{
+        background-color: rgb(209, 141, 164);
+        height: 450px;
+        width: 450px;
+        
+    }
+}
