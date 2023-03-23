@@ -309,7 +309,7 @@ body {
   flex-wrap: wrap; }
   .main-somos div .historia p {
     width: 500px;
-    height: 500px;
+    height: 580px;
     text-align: justify;
     margin-bottom: 170px; }
   .main-somos div .historia img {
@@ -373,7 +373,7 @@ body {
       grid-gap: 0.5em;
       grid-template-columns: 50%;
       grid-template-rows: 15%;
-      grid-template-areas: "nombre" "numero" "asunto" "correo";
+      grid-template-areas: "nombre" "numero" "asunto" "correo";
       justify-content: center;
       text-align: start;
       border: 3px solid black; }
