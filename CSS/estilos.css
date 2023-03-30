@@ -100,6 +100,15 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
+    header .nav-items .nav-item:hover {
+      width: 35px;
+      height: 35px;
+      border-radius: 1px;
+      font-size: 15px;
+      text-align: center;
+      line-height: 35px;
+      margin-left: 2px;
+      transition: all .10s; }
   header .nav-items .logo {
     margin: 3px;
     height: 25px;

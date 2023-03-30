@@ -27,8 +27,20 @@ header{
     .nav-items{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;    
+        justify-content: center;
+        
+        .nav-item:hover{
+            width: 35px;
+            height: 35px;
+            border-radius: 1px;
+            font-size: 15px;
+            text-align: center;
+            line-height: 35px;
+            margin-left: 2px;
+            transition:all .10s;
+        }
     }
+    
 
     .nav-items .logo{
         margin: 3px;
@@ -81,11 +93,11 @@ main{
     grid-template-columns: 350px;
     grid-template-rows: 40px;
     justify-content: center;
-        background-color: $color-footer;
-        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-        box-sizing: border-box;
-        width: 100%;
-        text-align: center;
+    background-color: $color-footer;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
         font: normal 16px sans-serif;
             padding: 45px 50px;
         .footer-left p {
